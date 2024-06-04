@@ -121,3 +121,44 @@ switch (number) {
     alert("PLEASE TRY AGAIN");
 }
 */
+
+/* Task 2 */
+
+// Q7: Use a loop to display the numbers 0 through 5, each in a separate alert window.
+// for (let i = 0; i <= 5; i++) {
+//   alert(i);
+// }
+
+// Q8: Use a loop to display the numbers 0 through 5 in a single alert window
+// let sum = "";
+// for (let i = 0; i <= 5; i++) {
+//   sum += i + ", ";
+// }
+// alert(sum);
+
+// Q9: Use a loop to display the numbers in the range 0…20 that are multiples of 3.
+// for (let i = 0; i <= 20; i++) {
+//   if (i % 3 === 0) {
+//     console.log(i);
+//   }
+// }
+
+// Q10: Prompt the user for a number in the range 0…100.  If the number is out of range, display an error message and prompt again until a valid number is entered.  Assume the user enters a number each time
+// let number = Number(prompt("Enter a number between 0 .. 100"));
+// while (number > 100 || number < 0) {
+//   alert("Invalid Number");
+//   number = Number(prompt("Enter a number between 0 .. 100"));
+//   if (number >= 0 && number <= 100) {
+//     break;
+//   }
+// }
+
+// Q11: Prompt for an integer, then display the sum of the integers from 0 through the number entered.  For example, if you enter 10, then display 55 which is the sum of   0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10
+
+// let sum = 0;
+// let num = Number(prompt("Enter a number : "));
+
+// for (let i = 0; i <= num; i++) {
+//   sum += i;
+// }
+// alert(sum);
