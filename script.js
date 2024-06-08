@@ -162,3 +162,38 @@ switch (number) {
 //   sum += i;
 // }
 // alert(sum);
+
+// Task 3
+
+// Q1 : Assume an array of different fruits is given (5 elements), you have to use dom to add images for all  items of the array to the html element as (ul) and show it in the html file.  give it a suitable style.
+
+const fruits = ["apple", "banana", "orange", "grapes", "mango"];
+const ul = document.querySelector("ul");
+
+for (let fruit of fruits) {
+  let li = document.createElement("li");
+  let img = document.createElement("img");
+  img.alt = fruit;
+  img.src = `images/${fruit}.jpg`;
+  li.appendChild(img);
+  ul.appendChild(li);
+}
+
+// Q2 : Create a function that takes two arguments, one is an array and the other is a number, then return the index of the given value or return -1 if the element cannot be found.
+
+const array = [0, 1, 2, 3, 10, 5];
+
+// const func = (arr, num) => (arr.includes(num) ? arr.indexOf(num) : -1);
+
+// console.log(func(array, 10));
+
+const getIndexOfTheNumber = (arr, num) => {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === num) {
+      return i;
+    }
+  }
+  return -1;
+};
+
+console.log(getIndexOfTheNumber(array, 10));
